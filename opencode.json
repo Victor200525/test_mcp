@@ -1,8 +1,10 @@
 {
-  "mcpServers": {
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
     "calculator": {
-      "command": "python",
-      "args": ["C:\\Users\\A\\Desktop\\test_mcp\\server.py"]
+      "type": "remote",
+      "url": "http://localhost:8000/mcp",
+      "enabled": true
     }
   }
 }

@@ -1,7 +1,7 @@
 import asyncio
 from mcp.server.fastmcp import FastMCP
 
-server = FastMCP("Calculator MCP Server", instructions="MCP сервер с калькулятором")
+server = FastMCP("Calculator MCP Server", instructions="MCP сервер с калькулятором", host="0.0.0.0", port=8000)
 
 
 @server.tool(description="Сложение двух чисел")
@@ -27,4 +27,4 @@ def divide(первое_число: float, второе_число: float) -> fl
 
 
 if __name__ == "__main__":
-    asyncio.run(server.run_stdio_async())
+    asyncio.run(server.run_streamable_http_async())
