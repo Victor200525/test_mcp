@@ -27,4 +27,4 @@ def divide(первое_число: float, второе_число: float) -> fl
 
 
 if __name__ == "__main__":
-    asyncio.run(server.run_sse_async(host="127.0.0.1", port=8000))
+    asyncio.run(server.run_stdio_async())
