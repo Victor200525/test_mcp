@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "calculator": {
+      "command": "python",
+      "args": ["C:\\Users\\A\\Desktop\\test_mcp\\server.py"]
+    }
+  }
+}
